@@ -2,6 +2,6 @@
   "name": "chefconvert-site",
   "compatibility_date": "2026-08-01",
   "assets": {
-    "directory": "./output/cooking"
+    "directory": "./output"
   }
 }
