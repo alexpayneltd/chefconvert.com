@@ -1,0 +1,533 @@
+[
+  {
+    "name": "Butter",
+    "slug": "butter",
+    "category": "fats",
+    "grams_per_cup": 227,
+    "grams_per_tbsp": 14.2,
+    "grams_per_tsp": 4.7,
+    "melt_note": "Yes \u2014 this conversion is for solid butter measured by packing into the cup. Melted butter is measured the same way by volume, but if a recipe calls for 'melted then measured,' pack it solid first for accuracy since melting can trap air pockets that skew volume."
+  },
+  {
+    "name": "Coconut Oil",
+    "slug": "coconut-oil",
+    "category": "fats",
+    "grams_per_cup": 218,
+    "grams_per_tbsp": 13.6,
+    "grams_per_tsp": 4.5,
+    "melt_note": "Yes \u2014 coconut oil is solid below about 76\u00b0F (24\u00b0C) and liquid above it. Measure solid coconut oil by packing it into the cup like butter; measured liquid coconut oil will weigh very slightly less per cup due to lower density in its melted state."
+  },
+  {
+    "name": "Margarine",
+    "slug": "margarine",
+    "category": "fats",
+    "grams_per_cup": 227,
+    "grams_per_tbsp": 14.2,
+    "grams_per_tsp": 4.7,
+    "melt_note": "Margarine has a very similar density to butter, so the solid-vs-melted consideration is the same: pack solid margarine into the cup for the most accurate measurement."
+  },
+  {
+    "name": "Vegetable Shortening",
+    "slug": "vegetable-shortening",
+    "category": "fats",
+    "grams_per_cup": 205,
+    "grams_per_tbsp": 12.8,
+    "grams_per_tsp": 4.3,
+    "melt_note": "Shortening is always solid at room temperature and should be packed into the measuring cup, pressing out air pockets, for an accurate weight."
+  },
+  {
+    "name": "Vegetable Oil",
+    "slug": "vegetable-oil",
+    "category": "liquids",
+    "grams_per_cup": 218,
+    "grams_per_tbsp": 13.6,
+    "grams_per_tsp": 4.5,
+    "melt_note": "Vegetable oil is liquid at room temperature, so there's no solid-vs-melted distinction \u2014 just measure directly with a liquid measuring cup for best accuracy."
+  },
+  {
+    "name": "Olive Oil",
+    "slug": "olive-oil",
+    "category": "liquids",
+    "grams_per_cup": 216,
+    "grams_per_tbsp": 13.5,
+    "grams_per_tsp": 4.5,
+    "melt_note": "Olive oil is liquid at room temperature. Use a liquid measuring cup rather than a dry one for the most accurate volume reading."
+  },
+  {
+    "name": "Granulated Sugar",
+    "slug": "granulated-sugar",
+    "category": "sugars",
+    "grams_per_cup": 200,
+    "grams_per_tbsp": 12.5,
+    "grams_per_tsp": 4.2,
+    "melt_note": "Granulated sugar doesn't melt for measurement purposes \u2014 this conversion assumes standard dry granulated sugar spooned into the cup and leveled off."
+  },
+  {
+    "name": "Brown Sugar",
+    "slug": "brown-sugar",
+    "category": "sugars",
+    "grams_per_cup": 220,
+    "grams_per_tbsp": 13.8,
+    "grams_per_tsp": 4.6,
+    "melt_note": "This conversion assumes firmly packed brown sugar, which is the standard most recipes intend. Loosely measured brown sugar can weigh 15\u201320% less per cup."
+  },
+  {
+    "name": "Powdered Sugar",
+    "slug": "powdered-sugar",
+    "category": "sugars",
+    "grams_per_cup": 120,
+    "grams_per_tbsp": 7.5,
+    "grams_per_tsp": 2.5,
+    "melt_note": "Powdered sugar should be spooned lightly into the cup and leveled, not packed or sifted directly in the cup, for the most consistent measurement."
+  },
+  {
+    "name": "Honey",
+    "slug": "honey",
+    "category": "liquids",
+    "grams_per_cup": 340,
+    "grams_per_tbsp": 21.25,
+    "grams_per_tsp": 7.1,
+    "melt_note": "Honey is measured as a liquid regardless of temperature, though slightly warming it makes it easier to pour cleanly and level in the measuring cup."
+  },
+  {
+    "name": "Maple Syrup",
+    "slug": "maple-syrup",
+    "category": "liquids",
+    "grams_per_cup": 322,
+    "grams_per_tbsp": 20.1,
+    "grams_per_tsp": 6.7,
+    "melt_note": "Maple syrup is measured as a liquid at any normal serving temperature; no solid state applies."
+  },
+  {
+    "name": "All-Purpose Flour",
+    "slug": "all-purpose-flour",
+    "category": "flours",
+    "grams_per_cup": 125,
+    "grams_per_tbsp": 7.8,
+    "grams_per_tsp": 2.6,
+    "melt_note": "Flour doesn't melt, but measurement technique matters a lot here: spoon flour into the cup and level it off rather than scooping directly with the cup, which can compact it and add up to 20% extra weight."
+  },
+  {
+    "name": "Whole Wheat Flour",
+    "slug": "whole-wheat-flour",
+    "category": "flours",
+    "grams_per_cup": 120,
+    "grams_per_tbsp": 7.5,
+    "grams_per_tsp": 2.5,
+    "melt_note": "As with all-purpose flour, spoon-and-level is the accurate technique \u2014 scooping directly compacts the flour and skews the weight higher."
+  },
+  {
+    "name": "Almond Flour",
+    "slug": "almond-flour",
+    "category": "flours",
+    "grams_per_cup": 96,
+    "grams_per_tbsp": 6.0,
+    "grams_per_tsp": 2.0,
+    "melt_note": "Almond flour is lighter and more prone to clumping than wheat flour \u2014 spoon it in and level gently rather than pressing it down."
+  },
+  {
+    "name": "Cornstarch",
+    "slug": "cornstarch",
+    "category": "flours",
+    "grams_per_cup": 128,
+    "grams_per_tbsp": 8.0,
+    "grams_per_tsp": 2.7,
+    "melt_note": "Cornstarch should be spooned and leveled like flour; it settles and compacts easily if scooped straight from the container."
+  },
+  {
+    "name": "Cocoa Powder",
+    "slug": "cocoa-powder",
+    "category": "dry-goods",
+    "grams_per_cup": 84,
+    "grams_per_tbsp": 5.25,
+    "grams_per_tsp": 1.75,
+    "melt_note": "Cocoa powder clumps easily \u2014 sift before measuring for the most accurate and consistent result."
+  },
+  {
+    "name": "Rolled Oats",
+    "slug": "rolled-oats",
+    "category": "dry-goods",
+    "grams_per_cup": 90,
+    "grams_per_tbsp": 5.6,
+    "grams_per_tsp": 1.9,
+    "melt_note": "Oats are measured dry and don't compact meaningfully, so a level scoop straight from the container is accurate."
+  },
+  {
+    "name": "White Rice",
+    "slug": "white-rice",
+    "category": "dry-goods",
+    "grams_per_cup": 185,
+    "grams_per_tbsp": 11.6,
+    "grams_per_tsp": 3.9,
+    "melt_note": "Uncooked rice doesn't compact significantly, so scooping and leveling gives a reliably accurate measurement."
+  },
+  {
+    "name": "Quinoa",
+    "slug": "quinoa",
+    "category": "dry-goods",
+    "grams_per_cup": 170,
+    "grams_per_tbsp": 10.6,
+    "grams_per_tsp": 3.5,
+    "melt_note": "Uncooked quinoa measures consistently whether scooped or spooned, since the small grains settle evenly."
+  },
+  {
+    "name": "Breadcrumbs",
+    "slug": "breadcrumbs",
+    "category": "dry-goods",
+    "grams_per_cup": 108,
+    "grams_per_tbsp": 6.75,
+    "grams_per_tsp": 2.25,
+    "melt_note": "Dry breadcrumbs should be spooned lightly into the cup; packing them down can add meaningfully to the weight."
+  },
+  {
+    "name": "Table Salt",
+    "slug": "table-salt",
+    "category": "dry-goods",
+    "grams_per_cup": 292,
+    "grams_per_tbsp": 18.25,
+    "grams_per_tsp": 6.1,
+    "melt_note": "This conversion is for fine table salt. Coarser salts like kosher or sea salt are less dense by volume and will weigh noticeably less per cup."
+  },
+  {
+    "name": "Milk",
+    "slug": "milk",
+    "category": "liquids",
+    "grams_per_cup": 245,
+    "grams_per_tbsp": 15.3,
+    "grams_per_tsp": 5.1,
+    "melt_note": "Milk is measured as a liquid at any standard temperature; use a liquid measuring cup for the most accurate reading."
+  },
+  {
+    "name": "Heavy Cream",
+    "slug": "heavy-cream",
+    "category": "liquids",
+    "grams_per_cup": 238,
+    "grams_per_tbsp": 14.9,
+    "grams_per_tsp": 5.0,
+    "melt_note": "Heavy cream is measured as a liquid; no solid-vs-melted consideration applies."
+  },
+  {
+    "name": "Water",
+    "slug": "water",
+    "category": "liquids",
+    "grams_per_cup": 237,
+    "grams_per_tbsp": 14.8,
+    "grams_per_tsp": 4.9,
+    "melt_note": "Water is the reference liquid for volume-to-weight conversion \u2014 1 cup is defined as almost exactly 237g at room temperature."
+  },
+  {
+    "name": "Baking Powder",
+    "slug": "baking-powder",
+    "category": "dry-goods",
+    "grams_per_cup": 192,
+    "grams_per_tbsp": 12.0,
+    "grams_per_tsp": 4.0,
+    "melt_note": "Baking powder should be measured level, straight from the container, without packing \u2014 excess pressure can affect how it reacts when baked."
+  },
+  {
+    "name": "Baking Soda",
+    "slug": "baking-soda",
+    "category": "dry-goods",
+    "grams_per_cup": 220,
+    "grams_per_tbsp": 13.8,
+    "grams_per_tsp": 4.6,
+    "melt_note": "Baking soda is fine and dense \u2014 spoon it in and level with a knife edge rather than shaking the cup to settle it, which can pack it too tightly."
+  },
+  {
+    "name": "Ground Cinnamon",
+    "slug": "ground-cinnamon",
+    "category": "spices",
+    "grams_per_cup": 118,
+    "grams_per_tbsp": 7.4,
+    "grams_per_tsp": 2.5,
+    "melt_note": "Ground cinnamon doesn't melt \u2014 this conversion assumes it's spooned into the cup and leveled, not packed, since packing spices can add 10-15% extra weight."
+  },
+  {
+    "name": "Ground Nutmeg",
+    "slug": "ground-nutmeg",
+    "category": "spices",
+    "grams_per_cup": 113,
+    "grams_per_tbsp": 7.1,
+    "grams_per_tsp": 2.4,
+    "melt_note": "Freshly ground nutmeg is finer and slightly denser than pre-ground jarred nutmeg \u2014 this conversion uses standard pre-ground nutmeg as the baseline."
+  },
+  {
+    "name": "Ground Ginger",
+    "slug": "ground-ginger",
+    "category": "spices",
+    "grams_per_cup": 100,
+    "grams_per_tbsp": 6.3,
+    "grams_per_tsp": 2.1,
+    "melt_note": "Ground ginger settles over time in storage \u2014 give the jar a shake before spooning to loosen it for a more accurate scoop."
+  },
+  {
+    "name": "Paprika",
+    "slug": "paprika",
+    "category": "spices",
+    "grams_per_cup": 120,
+    "grams_per_tbsp": 7.5,
+    "grams_per_tsp": 2.5,
+    "melt_note": "Smoked and sweet paprika have essentially the same density \u2014 this conversion applies to both."
+  },
+  {
+    "name": "Ground Black Pepper",
+    "slug": "ground-black-pepper",
+    "category": "spices",
+    "grams_per_cup": 100,
+    "grams_per_tbsp": 6.3,
+    "grams_per_tsp": 2.1,
+    "melt_note": "Freshly cracked pepper is coarser and less dense than pre-ground \u2014 this conversion assumes standard fine-ground black pepper."
+  },
+  {
+    "name": "Chili Powder",
+    "slug": "chili-powder",
+    "category": "spices",
+    "grams_per_cup": 128,
+    "grams_per_tbsp": 8.0,
+    "grams_per_tsp": 2.7,
+    "melt_note": "Chili powder blends vary slightly by brand depending on filler ingredients, but this conversion holds for standard commercial chili powder."
+  },
+  {
+    "name": "Ground Cumin",
+    "slug": "ground-cumin",
+    "category": "spices",
+    "grams_per_cup": 112,
+    "grams_per_tbsp": 7.0,
+    "grams_per_tsp": 2.3,
+    "melt_note": "Ground cumin should be spooned and leveled rather than scooped directly, since scooping can compact it and skew the weight slightly higher."
+  },
+  {
+    "name": "Sliced Almonds",
+    "slug": "sliced-almonds",
+    "category": "nuts",
+    "grams_per_cup": 92,
+    "grams_per_tbsp": 5.8,
+    "grams_per_tsp": 1.9,
+    "melt_note": "This conversion is for sliced almonds; whole or chopped almonds pack differently and will weigh a different amount per cup."
+  },
+  {
+    "name": "Chopped Walnuts",
+    "slug": "chopped-walnuts",
+    "category": "nuts",
+    "grams_per_cup": 120,
+    "grams_per_tbsp": 7.5,
+    "grams_per_tsp": 2.5,
+    "melt_note": "Coarsely chopped walnuts pack more loosely than finely chopped \u2014 this conversion assumes a medium, roughly-chopped texture."
+  },
+  {
+    "name": "Chopped Pecans",
+    "slug": "chopped-pecans",
+    "category": "nuts",
+    "grams_per_cup": 110,
+    "grams_per_tbsp": 6.9,
+    "grams_per_tsp": 2.3,
+    "melt_note": "As with other chopped nuts, chop size affects packing density \u2014 this conversion assumes a medium chop."
+  },
+  {
+    "name": "Chopped Peanuts",
+    "slug": "chopped-peanuts",
+    "category": "nuts",
+    "grams_per_cup": 146,
+    "grams_per_tbsp": 9.1,
+    "grams_per_tsp": 3.0,
+    "melt_note": "Peanuts are denser than most tree nuts, so they weigh more per cup even at a similar chop size."
+  },
+  {
+    "name": "Cashews",
+    "slug": "cashews",
+    "category": "nuts",
+    "grams_per_cup": 130,
+    "grams_per_tbsp": 8.1,
+    "grams_per_tsp": 2.7,
+    "melt_note": "This conversion is for whole raw cashews; roughly chopped cashews will pack slightly differently."
+  },
+  {
+    "name": "Shredded Coconut",
+    "slug": "shredded-coconut",
+    "category": "nuts",
+    "grams_per_cup": 93,
+    "grams_per_tbsp": 5.8,
+    "grams_per_tsp": 1.9,
+    "melt_note": "Unsweetened shredded coconut is lighter than sweetened, flaked versions \u2014 this conversion is for standard unsweetened shredded coconut."
+  },
+  {
+    "name": "Sour Cream",
+    "slug": "sour-cream",
+    "category": "dairy",
+    "grams_per_cup": 240,
+    "grams_per_tbsp": 15.0,
+    "grams_per_tsp": 5.0,
+    "melt_note": "Sour cream is measured cold, straight from the container \u2014 there's no melted state to account for."
+  },
+  {
+    "name": "Plain Yogurt",
+    "slug": "plain-yogurt",
+    "category": "dairy",
+    "grams_per_cup": 245,
+    "grams_per_tbsp": 15.3,
+    "grams_per_tsp": 5.1,
+    "melt_note": "Greek yogurt is thicker and denser than regular yogurt and will weigh somewhat more per cup \u2014 this conversion is for standard plain yogurt."
+  },
+  {
+    "name": "Cream Cheese",
+    "slug": "cream-cheese",
+    "category": "dairy",
+    "grams_per_cup": 232,
+    "grams_per_tbsp": 14.5,
+    "grams_per_tsp": 4.8,
+    "melt_note": "This conversion is for cream cheese at room temperature, packed into the cup. Cold, firm cream cheese is harder to measure accurately by volume."
+  },
+  {
+    "name": "Grated Parmesan",
+    "slug": "grated-parmesan",
+    "category": "dairy",
+    "grams_per_cup": 100,
+    "grams_per_tbsp": 6.3,
+    "grams_per_tsp": 2.1,
+    "melt_note": "This conversion is for finely grated Parmesan, lightly spooned into the cup. Pre-shredded, coarser Parmesan will weigh less per cup."
+  },
+  {
+    "name": "Shredded Cheddar",
+    "slug": "shredded-cheddar",
+    "category": "dairy",
+    "grams_per_cup": 113,
+    "grams_per_tbsp": 7.1,
+    "grams_per_tsp": 2.4,
+    "melt_note": "Shredded cheese should be measured loosely packed, not pressed down, for the most standard and accurate result."
+  },
+  {
+    "name": "Ricotta Cheese",
+    "slug": "ricotta-cheese",
+    "category": "dairy",
+    "grams_per_cup": 246,
+    "grams_per_tbsp": 15.4,
+    "grams_per_tsp": 5.1,
+    "melt_note": "Ricotta is measured cold, spooned into the cup \u2014 there's no melted state to account for in this conversion."
+  },
+  {
+    "name": "Chopped Onion",
+    "slug": "chopped-onion",
+    "category": "produce",
+    "grams_per_cup": 160,
+    "grams_per_tbsp": 10.0,
+    "grams_per_tsp": 3.3,
+    "melt_note": "This conversion is for raw, medium-diced onion, loosely packed into the cup."
+  },
+  {
+    "name": "Diced Tomato",
+    "slug": "diced-tomato",
+    "category": "produce",
+    "grams_per_cup": 180,
+    "grams_per_tbsp": 11.3,
+    "grams_per_tsp": 3.8,
+    "melt_note": "This conversion is for fresh diced tomato without excess liquid drained off; canned diced tomato with juice will weigh slightly more."
+  },
+  {
+    "name": "Mashed Banana",
+    "slug": "mashed-banana",
+    "category": "produce",
+    "grams_per_cup": 225,
+    "grams_per_tbsp": 14.1,
+    "grams_per_tsp": 4.7,
+    "melt_note": "This conversion is for ripe mashed banana, spooned into the cup without pressing air pockets out."
+  },
+  {
+    "name": "Grated Carrot",
+    "slug": "grated-carrot",
+    "category": "produce",
+    "grams_per_cup": 110,
+    "grams_per_tbsp": 6.9,
+    "grams_per_tsp": 2.3,
+    "melt_note": "This conversion is for finely grated raw carrot, loosely packed into the cup."
+  },
+  {
+    "name": "Chopped Celery",
+    "slug": "chopped-celery",
+    "category": "produce",
+    "grams_per_cup": 120,
+    "grams_per_tbsp": 7.5,
+    "grams_per_tsp": 2.5,
+    "melt_note": "This conversion is for raw, medium-diced celery, loosely packed into the cup."
+  },
+  {
+    "name": "Corn Syrup",
+    "slug": "corn-syrup",
+    "category": "liquids",
+    "grams_per_cup": 328,
+    "grams_per_tbsp": 20.5,
+    "grams_per_tsp": 6.8,
+    "melt_note": "Corn syrup is measured as a liquid at room temperature; there's no solid state to account for."
+  },
+  {
+    "name": "Molasses",
+    "slug": "molasses",
+    "category": "liquids",
+    "grams_per_cup": 328,
+    "grams_per_tbsp": 20.5,
+    "grams_per_tsp": 6.8,
+    "melt_note": "Molasses is measured as a liquid. Lightly greasing the measuring cup first can help it pour out cleanly without affecting the measurement."
+  },
+  {
+    "name": "White Vinegar",
+    "slug": "white-vinegar",
+    "category": "liquids",
+    "grams_per_cup": 240,
+    "grams_per_tbsp": 15.0,
+    "grams_per_tsp": 5.0,
+    "melt_note": "White vinegar is measured as a liquid at any standard temperature; no solid state applies."
+  },
+  {
+    "name": "Erythritol",
+    "slug": "erythritol",
+    "category": "sugars",
+    "grams_per_cup": 200,
+    "grams_per_tbsp": 12.5,
+    "grams_per_tsp": 4.2,
+    "melt_note": "Erythritol is a dry granular sweetener and doesn't melt for measurement purposes \u2014 spoon and level for accuracy, since it's lighter than table sugar by volume."
+  },
+  {
+    "name": "Cornmeal",
+    "slug": "cornmeal",
+    "category": "dry-goods",
+    "grams_per_cup": 138,
+    "grams_per_tbsp": 8.6,
+    "grams_per_tsp": 2.9,
+    "melt_note": "Cornmeal doesn't compact significantly, so a level scoop straight from the container is accurate."
+  },
+  {
+    "name": "Semolina",
+    "slug": "semolina",
+    "category": "dry-goods",
+    "grams_per_cup": 167,
+    "grams_per_tbsp": 10.4,
+    "grams_per_tsp": 3.5,
+    "melt_note": "Semolina is coarser than flour and doesn't compact the same way \u2014 a level scoop is accurate without needing to spoon and level."
+  },
+  {
+    "name": "Dried Lentils",
+    "slug": "dried-lentils",
+    "category": "dry-goods",
+    "grams_per_cup": 192,
+    "grams_per_tbsp": 12.0,
+    "grams_per_tsp": 4.0,
+    "melt_note": "Dried lentils measure consistently by volume since the small, uniform pieces settle evenly."
+  },
+  {
+    "name": "Dried Chickpeas",
+    "slug": "dried-chickpeas",
+    "category": "dry-goods",
+    "grams_per_cup": 200,
+    "grams_per_tbsp": 12.5,
+    "grams_per_tsp": 4.2,
+    "melt_note": "Dried chickpeas measure consistently whether scooped or spooned, since the rounded shape settles evenly in the cup."
+  },
+  {
+    "name": "Panko Breadcrumbs",
+    "slug": "panko-breadcrumbs",
+    "category": "dry-goods",
+    "grams_per_cup": 60,
+    "grams_per_tbsp": 3.75,
+    "grams_per_tsp": 1.25,
+    "melt_note": "Panko is much lighter and airier than standard breadcrumbs \u2014 don't pack it into the cup, or the weight will read significantly higher than actual."
+  }
+]
