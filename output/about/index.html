@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | ChefConvert.com</title>
+<meta name="description" content="How ChefConvert's kitchen measurement conversions are calculated, and why they're accurate.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+  :root {
+    --paper: #EEF1EF; --panel: #FFFFFF; --ink: #1B2B2E; --ink-soft: #52646A;
+    --line: #C3CDCB; --accent: #0C7D8C; --accent-deep: #075964;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 20px 80px; }
+  header.site { display: flex; align-items: center; justify-content: space-between; margin-bottom: 32px; padding-bottom: 16px; border-bottom: 1px solid var(--line); }
+  .wordmark { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 18px; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+  .wordmark img { height: 34px; width: auto; }
+  .wordmark .accent-text { color: var(--accent-deep); }
+  .breadcrumb { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--ink-soft); margin-bottom: 20px; }
+  .breadcrumb a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px dotted var(--line); }
+  h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(28px, 5vw, 36px); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 24px; }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-size: 18px; margin: 32px 0 10px; }
+  p { color: var(--ink-soft); font-size: 15px; margin: 0 0 14px; }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 3px; padding: 24px; margin-top: 8px; }
+  footer { margin-top: 48px; font-size: 12px; color: var(--ink-soft); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="site">
+    <a href="/" class="wordmark"><img src="/logo-icon-header.png" alt="ChefConvert logo">Chef<span class="accent-text">Convert</span>.com</a>
+  </header>
+  <nav class="breadcrumb"><a href="/">Home</a> / About</nav>
+  <h1>About ChefConvert</h1>
+
+  <p>ChefConvert exists for one reason: recipe measurements shouldn't require guesswork. Whether you're converting a cup of butter to grams for a European recipe or figuring out how many tablespoons of honey equal a specific weight, the goal is a fast, accurate answer with no ads getting in the way.</p>
+
+  <div class="panel">
+    <h2 style="margin-top:0;">How conversions are calculated</h2>
+    <p>Every conversion is based on standard ingredient density figures — how much a given volume of an ingredient weighs, accounting for how it's typically measured (packed, leveled, or loosely spooned, depending on the ingredient). Densities are drawn from standard culinary reference data, and each page notes any technique that affects accuracy — for example, whether an ingredient should be packed or leveled.</p>
+    <p>Cup measurements follow the US standard (240ml). If you're working from a recipe using UK or metric cup standards, results may vary slightly.</p>
+  </div>
+
+  <h2>Why the numbers might differ slightly from other sources</h2>
+  <p>Ingredient density varies naturally — a cup of loosely sifted flour weighs less than a cup of scooped-and-packed flour, for instance. Every conversion page notes the assumed measuring technique so you know exactly what the number represents, rather than presenting a single "correct" figure with no context.</p>
+
+  <footer>ChefConvert — kitchen-accurate measurement conversions.</footer>
+</div>
+</body>
+</html>
