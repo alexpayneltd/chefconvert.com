@@ -27,12 +27,12 @@
 <meta name="description" content="Convert Cups of Diced Tomato to Calories instantly. Precise kitchen-tested conversion with a full reference table and common measurements.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Cups to Calories — Diced Tomato Converter | ChefConvert.com">
-<meta property="og:description" content="Convert Cups of Diced Tomato to Calories instantly with kitchen-accurate precision.">
+<meta property="og:description" content="Convert Cups of Diced Tomato to Calories instantly. Precise kitchen-tested conversion with a full reference table and common measurements.">
 <meta property="og:url" content="https://chefconvert.com/cooking/cups-to-calories-diced-tomato">
 <meta property="og:image" content="https://chefconvert.com/logo-header.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Cups to Calories — Diced Tomato Converter">
-<meta name="twitter:description" content="Convert Cups of Diced Tomato to Calories instantly with kitchen-accurate precision.">
+<meta name="twitter:description" content="Convert Cups of Diced Tomato to Calories instantly. Precise kitchen-tested conversion with a full reference table and common measurements.">
 <link rel="canonical" href="https://chefconvert.com/cooking/cups-to-calories-diced-tomato">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -453,7 +453,8 @@
   function convert() {
     const val = parseFloat(input.value) || 0;
     const result = (val * DENSITY).toFixed(1);
-    output.value = result + ' cal';
+    const resultUnit = parseFloat(result) === 1 ? 'cal' : 'cal';
+    output.value = result + ' ' + resultUnit;
     // Move the gauge marker (clamped 0–4 cup mapped to 0–100%)
     const pct = Math.min(Math.max((val / 4) * 100, 0), 100);
     marker.style.left = pct + '%';
@@ -465,7 +466,9 @@
   const tbody = document.getElementById('ref-table-body');
   for (let i = 0.25; i <= 4; i += 0.25) {
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${i} cup${i !== 1 ? 's' : ''}</td><td>${(i * DENSITY).toFixed(1)} cal</td>`;
+    const rowResult = (i * DENSITY).toFixed(1);
+    const rowUnit = parseFloat(rowResult) === 1 ? 'cal' : 'cal';
+    row.innerHTML = `<td>${i} cup${i !== 1 ? 's' : ''}</td><td>${rowResult} ${rowUnit}</td>`;
     tbody.appendChild(row);
   }
 </script>
