@@ -222,9 +222,6 @@
   const SUB_DENSITY = 244; // grams per cup of the substitute
   const SUB_CAL_PER_100G = 52;
   const ORIG_CAL_PER_CUP = 1627.6;
-  const input = document.getElementById('input-value');
-  const outputCups = document.getElementById('output-value');
-  const outputGrams = document.getElementById('output-grams');
   const origCalEl = document.getElementById('orig-calories');
   const subCalEl = document.getElementById('sub-calories');
   const savingsEl = document.getElementById('calorie-savings');
@@ -233,6 +230,10 @@
     const grams = cups * SUB_DENSITY;
     return grams * SUB_CAL_PER_100G / 100;
   }
+
+  const input = document.getElementById('input-value');
+  const outputCups = document.getElementById('output-value');
+  const outputGrams = document.getElementById('output-grams');
 
   function convert() {
     const val = parseFloat(input.value) || 0;

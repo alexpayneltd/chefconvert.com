@@ -177,13 +177,7 @@
       <div class="field">
         <label for="input-value">Ricotta Cheese (cups)</label>
         <input type="number" id="input-value" value="1" step="0.25">
-        <div class="unit-tag">Amount called for in recipe</div>
-      </div>
-      <div class="arrow">&#8594;</div>
-      <div class="field result-field">
-        <label for="output-value">Part-Skim Ricotta (cups)</label>
-        <input type="text" id="output-value" readonly>
-        <div class="result-secondary">= <strong id="output-grams"></strong> grams Part-Skim Ricotta</div>
+        <div class="unit-tag">Amount called for in recipe — used at the same amount by volume</div>
       </div>
     </div>
 
@@ -198,7 +192,7 @@
   </div>
 
   <table class="ref">
-    <thead><tr><th>Ricotta Cheese (cups)</th><th>Part-Skim Ricotta (cups)</th><th>Part-Skim Ricotta (grams)</th><th>Calories Saved</th></tr></thead>
+    <thead><tr><th>Ricotta Cheese (cups)</th><th>Part-Skim Ricotta (grams)</th><th>Calories Saved</th></tr></thead>
     <tbody id="ref-table-body"></tbody>
   </table>
 
@@ -222,9 +216,6 @@
   const SUB_DENSITY = 246; // grams per cup of the substitute
   const SUB_CAL_PER_100G = 138;
   const ORIG_CAL_PER_CUP = 428.0;
-  const input = document.getElementById('input-value');
-  const outputCups = document.getElementById('output-value');
-  const outputGrams = document.getElementById('output-grams');
   const origCalEl = document.getElementById('orig-calories');
   const subCalEl = document.getElementById('sub-calories');
   const savingsEl = document.getElementById('calorie-savings');
@@ -234,15 +225,12 @@
     return grams * SUB_CAL_PER_100G / 100;
   }
 
+  const input = document.getElementById('input-value');
+
   function convert() {
     const val = parseFloat(input.value) || 0;
-    const subCups = val * RATIO;
-    const grams = subCups * SUB_DENSITY;
-    outputCups.value = subCups.toFixed(2) + ' cups';
-    outputGrams.textContent = grams.toFixed(1);
-
+    const subCal = subCalories(val);
     const origCal = val * ORIG_CAL_PER_CUP;
-    const subCal = subCalories(subCups);
     origCalEl.textContent = Math.round(origCal);
     subCalEl.textContent = Math.round(subCal);
     savingsEl.textContent = Math.round(origCal - subCal) + ' cal saved';
@@ -252,13 +240,12 @@
 
   const tbody = document.getElementById('ref-table-body');
   for (let i = 0.25; i <= 4; i += 0.25) {
-    const subCups = i * RATIO;
-    const grams = subCups * SUB_DENSITY;
+    const grams = i * SUB_DENSITY;
     const origCal = i * ORIG_CAL_PER_CUP;
-    const subCal = subCalories(subCups);
+    const subCal = subCalories(i);
     const saved = Math.round(origCal - subCal);
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${i} cup${i !== 1 ? 's' : ''}</td><td>${subCups.toFixed(2)} cups</td><td>${grams.toFixed(1)} g</td><td>${saved} cal</td>`;
+    row.innerHTML = `<td>${i} cup${i !== 1 ? 's' : ''}</td><td>${grams.toFixed(1)} g</td><td>${saved} cal</td>`;
     tbody.appendChild(row);
   }
 </script>

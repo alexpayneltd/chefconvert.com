@@ -173,17 +173,16 @@
       </div>
       <div class="arrow">&#8594;</div>
       <div class="field result-field">
-        <label for="output-value">Vegan Sour Cream (cups)</label>
-        <input type="text" id="output-value" readonly>
-        <div class="result-secondary">= <strong id="output-grams"></strong> grams Vegan Sour Cream</div>
+        <label for="output-grams">Vegan Sour Cream (grams)</label>
+        <input type="text" id="output-grams" readonly>
+        <div class="unit-tag">Used at the same amount by volume — 1 cup for 1 cup</div>
       </div>
     </div>
-
     <div class="note-box"><strong>Good to know:</strong> Store-bought cashew- or coconut-based vegan sour cream gives the most consistent result. Homemade cashew versions vary in thickness batch to batch.</div>
   </div>
 
   <table class="ref">
-    <thead><tr><th>Sour Cream (cups)</th><th>Vegan Sour Cream (cups)</th><th>Vegan Sour Cream (grams)</th></tr></thead>
+    <thead><tr><th>Sour Cream (cups)</th><th>Vegan Sour Cream (grams)</th></tr></thead>
     <tbody id="ref-table-body"></tbody>
   </table>
 
@@ -206,24 +205,21 @@
   const RATIO = 1.0;
   const SUB_DENSITY = 240; // grams per cup of the substitute
   const input = document.getElementById('input-value');
-  const outputCups = document.getElementById('output-value');
   const outputGrams = document.getElementById('output-grams');
 
   function convert() {
     const val = parseFloat(input.value) || 0;
-    const subCups = val * RATIO;
-    outputCups.value = subCups.toFixed(2) + ' cups';
-    outputGrams.textContent = (subCups * SUB_DENSITY).toFixed(1);
+    const grams = val * SUB_DENSITY;
+    outputGrams.value = grams.toFixed(1) + ' g';
   }
   input.addEventListener('input', convert);
   convert();
 
   const tbody = document.getElementById('ref-table-body');
   for (let i = 0.25; i <= 4; i += 0.25) {
-    const subCups = i * RATIO;
-    const grams = subCups * SUB_DENSITY;
+    const grams = i * SUB_DENSITY;
     const row = document.createElement('tr');
-    row.innerHTML = `<td>${i} cup${i !== 1 ? 's' : ''}</td><td>${subCups.toFixed(2)} cups</td><td>${grams.toFixed(1)} g</td>`;
+    row.innerHTML = `<td>${i} cup${i !== 1 ? 's' : ''}</td><td>${grams.toFixed(1)} g</td>`;
     tbody.appendChild(row);
   }
 </script>

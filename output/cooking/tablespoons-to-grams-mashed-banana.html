@@ -214,7 +214,11 @@
     letter-spacing: -0.01em;
     margin: 0 0 8px;
   }
-  .subhead { color: var(--ink-soft); font-size: 15px; margin-bottom: 36px; }
+  .subhead { color: var(--ink-soft); font-size: 15px; margin-bottom: 12px; }
+  .unit-switcher { display: flex; gap: 6px; align-items: center; margin-bottom: 24px; font-size: 13px; color: var(--ink-soft); }
+  .unit-switcher a { color: var(--accent-deep); text-decoration: none; border-bottom: 1px dotted var(--accent); }
+  .unit-switcher a:hover { color: var(--accent); }
+  .unit-switcher .current { color: var(--ink); font-weight: 600; }
 
   /* Instrument panel: the calculator */
   .panel {
@@ -363,6 +367,7 @@
 
   <h1>Tablespoons to Grams — Mashed Banana Converter</h1>
   <p class="subhead">Convert Mashed Banana between Tablespoons and Grams with kitchen-accurate precision.</p>
+  <div class="unit-switcher">Also see: <a href="/cooking/cups-to-grams-mashed-banana">Cups</a> &middot; <span class="current">Tbsp</span> &middot; <a href="/cooking/teaspoons-to-grams-mashed-banana">Tsp</a></div>
 
   <div class="panel">
     <div class="io-row">
