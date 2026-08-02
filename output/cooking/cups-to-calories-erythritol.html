@@ -215,10 +215,15 @@
     margin: 0 0 8px;
   }
   .subhead { color: var(--ink-soft); font-size: 15px; margin-bottom: 12px; }
-  .unit-switcher { display: flex; gap: 6px; align-items: center; margin-bottom: 24px; font-size: 13px; color: var(--ink-soft); }
-  .unit-switcher a { color: var(--accent-deep); text-decoration: none; border-bottom: 1px dotted var(--accent); }
-  .unit-switcher a:hover { color: var(--accent); }
-  .unit-switcher .current { color: var(--ink); font-weight: 600; }
+  .unit-switcher { display: flex; gap: 8px; align-items: center; margin-bottom: 28px; flex-wrap: wrap; }
+  .unit-switcher .switcher-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); margin-right: 4px; }
+  .unit-switcher a, .unit-switcher .current {
+    font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: 0.03em; text-decoration: none; padding: 6px 14px; border-radius: 3px;
+  }
+  .unit-switcher a { color: var(--accent-deep); background: var(--panel); border: 1px solid var(--line); }
+  .unit-switcher a:hover { background: var(--accent); color: white; border-color: var(--accent); }
+  .unit-switcher .current { color: white; background: var(--accent); border: 1px solid var(--accent); }
 
   /* Instrument panel: the calculator */
   .panel {
@@ -367,7 +372,7 @@
 
   <h1>Cups to Calories — Erythritol Converter</h1>
   <p class="subhead">Convert Erythritol between Cups and Calories with kitchen-accurate precision.</p>
-  <div class="unit-switcher">Also see: <span class="current">Cups</span> &middot; <a href="/cooking/tablespoons-to-calories-erythritol">Tbsp</a> &middot; <a href="/cooking/teaspoons-to-calories-erythritol">Tsp</a></div>
+  <div class="unit-switcher"><span class="switcher-label">Units:</span><span class="current">Cups</span><a href="/cooking/tablespoons-to-calories-erythritol">Tbsp</a><a href="/cooking/teaspoons-to-calories-erythritol">Tsp</a></div>
 
   <div class="panel">
     <div class="io-row">
